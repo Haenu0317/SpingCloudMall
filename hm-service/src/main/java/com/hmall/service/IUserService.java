@@ -10,8 +10,8 @@ import com.hmall.domain.vo.UserLoginVO;
  * 用户表 服务类
  * </p>
  *
- * @author 虎哥
- * @since 2023-05-05
+ * @author haenu
+ * @since 2023-10-10
  */
 public interface IUserService extends IService<User> {
 

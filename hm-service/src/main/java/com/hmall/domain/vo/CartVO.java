@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
  * 订单详情表
  * </p>
  *
- * @author 虎哥
- * @since 2023-05-05
+ * @author haenu
+ * @since 2023-10-10
  */
 @Data
 @ApiModel(description = "购物车VO实体")
