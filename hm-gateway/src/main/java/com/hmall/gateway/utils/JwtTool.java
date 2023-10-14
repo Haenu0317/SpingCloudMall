@@ -6,6 +6,9 @@ import cn.hutool.jwt.JWTValidator;
 import cn.hutool.jwt.signers.JWTSigner;
 import cn.hutool.jwt.signers.JWTSignerUtil;
 import com.hmall.common.exception.UnauthorizedException;
+import com.hmall.gateway.config.AuthProperties;
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.security.KeyPair;
@@ -13,6 +16,7 @@ import java.time.Duration;
 import java.util.Date;
 
 @Component
+
 public class JwtTool {
     private final JWTSigner jwtSigner;
 

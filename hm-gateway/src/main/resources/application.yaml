@@ -28,8 +28,6 @@ spring:
           uri: lb://pay-service
           predicates:
             - Path=/pay-orders/**
-      default-filters:
-        - PrintAny
     nacos:
       server-addr: 192.168.140.130
 logging:
