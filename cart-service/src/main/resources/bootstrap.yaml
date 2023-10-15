@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cart-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.140.130
+      config:
+        file-extension: yaml
+        shared-configs:
+          - data-id: shared_jdbc.yaml
+          - data-id: shared_log.yaml
+          - data-id: shared-swagger.yaml
+          - data-id: shared-feign.yaml
