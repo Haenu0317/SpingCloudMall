@@ -9,4 +9,15 @@ hm:
   cart:
     maxSize: 2 #购物车上线
 
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true
+
+feign:
+  sentinel:
+    enabled: true # 开启Feign的sentinel整合
+
 # keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
